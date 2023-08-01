@@ -1,4 +1,3 @@
----
 items:
   - text: Menu One
     url: "#"
@@ -6,5 +5,5 @@ items:
     url: "#"
   - text: Menu Three
     url: "#"
-  - text: Blog
-    url: "/blog"
+  - text: Work
+    url: /blog
