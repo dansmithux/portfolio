@@ -98,7 +98,6 @@ Music
 * UX writing
 * Design thinking
 
-
 ### UX research
 * User interviews
 * Usability testing
@@ -106,7 +105,6 @@ Music
 * Card sorting
 * Tree testing
 * A/B testing
-
 
 ### Web
 * HTML5
