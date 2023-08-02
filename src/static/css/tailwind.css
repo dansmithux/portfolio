@@ -12,9 +12,32 @@ h3 {
   @apply text-2xl font-bold mb-3;
 }
 
+.cursive {
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
 /* Syntax Highlighting*/
 
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   @apply bg-gray-800;
 }
+
+@layer base {
+
+
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  li.nav__item {
+    border-bottom: 3px solid transparent;
+  }
+  li.nav__item[aria-current="page"] {
+    border-bottom: 3px solid rgb(99, 102, 241);
+  }
+
+}
+

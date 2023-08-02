@@ -1,0 +1,26 @@
+---
+layout: portfolio
+---
+
+<div class="w-full grid grid-cols-1 gap-4 my-8 lg:mx-0">
+    {% set postslist = collections.portfolio %}
+
+    {% for post in postslist | reverse %}
+        <a href="{{ post.url | url }}" class="p-5 border rounded border-gray-200 hover:border-purple-400">
+            <h3>{% if post.data.title %}
+                        {{ post.data.title }}
+                    {% else %}
+                        Untitled
+                    {% endif %}
+                →</h3>
+            {% if post.data.description %}
+                <p class="text-lg text-gray-500 mb-3">
+                    {{ post.data.description }}
+                </p>
+            {% endif %}
+            
+            <p>Type:</p>
+        </a>
+
+    {% endfor %}
+</div>
