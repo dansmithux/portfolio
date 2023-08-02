@@ -1,0 +1,143 @@
+{
+  "name": "Dan Smith",
+  "title": "UX Designer",
+  "email": "dan@dansmithux.com",
+  "website": "https://dansmithux.com/",
+  "linkedin": "https://www.linkedin.com/in/dansmithux/",
+  "summary": "Results-driven & interdisciplinary UX designer with a proven history of creating data-driven, user-centered solutions. Proficient in effectively facilitating workshops, conducting comprehensive user research, and extracting valuable insights to inform design choices. Skilled in crafting solutions that meet both user needs and business objectives, and adept at creating & maintaining design systems for consistency, efficiency, and scalability. A deep grasp of web technologies allows me to strategically design for optimal accessibility and performance. With a background as a collaborative musician, I excel in fostering communication and coordination with cross-functional teams to ensure impactful outcomes.",
+  "experience": [
+    {
+      "company": "Speaking of Science",
+      "title": "UX Lead",
+      "dates": "November 2022 to present",
+      "location": "Remote",
+      "responsibilities": [
+        "Led client workshops and research-driven design processes, successfully coordinating and executing work across user research, information architecture, visual design, and interaction design to ensure alignment of user needs and business goals, resulting in on-time project delivery and positive client feedback.",
+        "Implemented design systems in Figma, improving scalability and enhancing design consistency, resulting in reduced development time.",
+        "Collaborated effectively with cross-functional teams, including developers, designers, project managers, copywriters, and clients.",
+        "Guided and mentored junior UX practitioners, resulting in high-quality deliverables and professional development."
+      ]
+    },
+    {
+      "company": "Speaking of Science",
+      "title": "UX Designer & Front-End Engineer",
+      "dates": "February 2021 to November 2022",
+      "location": "Remote",
+      "responsibilities": [
+        "Contributed to designing and developing responsive healthcare websites and applications, emphasizing accessibility, simplicity, and usability."
+      ]
+    },
+    {
+      "company": "O3",
+      "title": "UX Strategist",
+      "dates": "February 2022 to September 2022",
+      "location": "Remote",
+      "responsibilities": [
+        "Planned & facilitated client-focused discovery workshops, driving collaboration to uncover user needs and establish project goals.",
+        "Conducted user research, including user interviews, usability testing, contextual inquiries, analytics analysis, competitive analysis, and A/B testing to inform design decisions.",
+        "Developed data-driven artifacts such as personas, journey maps, sitemaps, wireframes, wireflows, and prototypes to test hypotheses and guide decision-making.",
+        "Led interaction & visual design efforts across multiple projects, creating new components and interactive features for design systems.",
+        "Performed heuristic evaluations and design quality assurance to maintain high standards of user experience, generating comprehensive reports and tracking action items through JIRA for timely completion.",
+        "Collaborated extensively with developers, designers, strategists, project managers, and senior leadership, utilizing tools like Figma, Miro, Zoom, Slack, JIRA, Notion, and Google Workspace for seamless communication and project coordination."
+      ]
+    },
+    {
+      "company": "Microsoft",
+      "title": "Software Engineer",
+      "dates": "March 2017 to April 2021",
+      "location": "Bellevue, WA / remote",
+      "responsibilities": [
+        "Spearheaded pixel-perfect front-end development of responsive, accessible marketing websites for high-visibility product releases and conferences, including Dynamics 365, Power BI, Power Apps, Power Automate, and Power Virtual Agents, reaching millions of customers.",
+        "Collaborated with software engineers, product managers, and designers, providing feasibility feedback and cost-benefit analyses for new design patterns to ensure engineering practicality and design optimization.",
+        "Designed and developed enhancements and components for a Microsoft design system, focusing on scalability, consistency, accessibility, and usability.",
+        "Conducted heuristic evaluations and leveraged data-driven principles to provide UX best practice recommendations."
+      ]
+    },
+    {
+      "company": "PitchBook Data",
+      "title": "Web Development Engineer",
+      "dates": "September 2015 to March 2017",
+      "location": "Seattle, WA",
+      "responsibilities": [
+        "Demonstrated end-to-end involvement in planning, user research, design, and development of multiple applications and interfaces, resulting in a 200% increase in relevant data acquisition for the company.",
+        "Conceptualized, wireframed, designed, and developed an internal automation application that significantly enhanced employee task speed, leading to a 2,250% efficiency improvement.",
+        "Collaborated extensively with machine learning engineers, software engineers, UX designers, product managers, and non-technical stakeholders."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Nielsen Norman Group",
+      "degree": "UX Master Certificate (UXMC)",
+      "specialties": "Interaction Design & UX Research",
+      "dates": "2016–2022",
+      "coursework": "90 hours of interaction design and UX research coursework"
+    },
+    {
+      "institution": "Maryland Institute College of Art",
+      "degree": "Master of Professional Studies",
+      "field": "User Experience Design",
+      "dates": "2019–2020",
+      "gpa": "4.0 / 4.0 GPA",
+      "awards": "Recipient of UX Design Thesis Award"
+    },
+    {
+      "institution": "General Assembly",
+      "degree": "User Experience Design Certificate",
+      "dates": "2017",
+      "course": "Part-time course consisting of 40 instructional hours"
+    },
+    {
+      "institution": "General Assembly",
+      "degree": "Web Development Immersive",
+      "dates": "2015",
+      "course": "Full-time course consisting of 480 instructional hours"
+    },
+    {
+      "institution": "Western Washington University",
+      "degree": "Bachelor of Arts",
+      "field": "Music",
+      "dates": "2009–2014",
+      "gpa": "3.56 / 4.0 GPA"
+    }
+  ],
+  "skills": {
+    "ux_design": [
+      "Interaction design",
+      "Wireframing",
+      "Prototyping",
+      "Information architecture",
+      "Visual design",
+      "UX writing",
+      "Design thinking"
+    ],
+    "ux_research": [
+      "User interviews",
+      "Usability testing",
+      "Contextual inquiry studies",
+      "Card sorting",
+      "Tree testing",
+      "A/B testing"
+    ],
+    "web": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "WordPress",
+      "SQL"
+    ],
+    "tools": [
+      "Figma",
+      "Sketch",
+      "FigJam",
+      "Miro",
+      "Adobe Photoshop",
+      "Notion",
+      "JIRA",
+      "Sublime Text",
+      "GitHub / version control",
+      "Google Workspace",
+      "Microsoft Office"
+    ]
+  }
+}
