@@ -3,6 +3,8 @@ layout: portfolio
 eleventyExcludeFromCollections: true
 ---
 
+<!-- https://tailwindui.com/components/application-ui/elements/badges -->
+
 <div class="w-full grid grid-cols-1 gap-4 my-8 lg:mx-0">
     {% set postslist = collections.portfolio %}
     {% for post in postslist | reverse %}
@@ -17,6 +19,13 @@ eleventyExcludeFromCollections: true
                 <p class="text-lg text-gray-500 mb-3">
                     {{ post.data.description }}
                 </p>
+            {% endif %}
+            {% if post.data.tags %}
+                {% for tag in post.data.tags %}
+                    {% if tag != layout %}
+                        <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">{{ tag }}</span>
+                    {% endif %}
+                {% endfor %}
             {% endif %}
         </a>
 

@@ -3,7 +3,9 @@
     {% if quicklinks.links %}
 
         {% for item in quicklinks.links %}
-            <a href="{{item.url}}" class="p-5 border rounded border-gray-200 hover:border-purple-400">
+            <a href="{{item.url}}" class="p-5 border rounded border-gray-200 shadow-sm relative hover:text-white hover:bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700">
+                
+                <span class="absolute inset-0 w-full h-full"></span>
                 <h3>{{item.title}}
                     →</h3>
                 <p>{{item.desc}}</p>

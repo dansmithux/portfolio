@@ -1,19 +1,226 @@
 ---
-layout: default
+layout: resume
 title: Résumé
 path: /resume/
+eleventyExcludeFromCollections: true
 ---
+
+<!-- https://devdojo.com/tailwindcss/buttons -->
+<!-- https://heropatterns.com -->
+
 
 
 <div class="container max-w-4xl mt-6  px-6">
     <div class="pb-5 mb-5 border-b border-gray-100">
-        <h1 class="font-bold text-5xl">{{title}}</h1>
-        <p class="text-center text-base leading-6 font-medium text-gray-500">
-            Text
-        </p>
 
+        <a href="https://docs.google.com/document/d/1sfX1Ojxv1UPvM-bxbcn_eE4zdITiOiz8nfV9NuNLYrA/edit?usp=sharing" target="_blank" class="relative inline-flex items-center justify-center p-4 px-5 py-2 mr-2 overflow-hidden font-medium no-underline text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
+            <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
+            <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+            <span class="relative text-white ">
+                <span>Open in Google Docs</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 ml-1 mb-1 inline">
+                    <path fill-rule="evenodd" d="M15.75 2.25H21a.75.75 0 01.75.75v5.25a.75.75 0 01-1.5 0V4.81L8.03 17.03a.75.75 0 01-1.06-1.06L19.19 3.75h-3.44a.75.75 0 010-1.5zm-10.5 4.5a1.5 1.5 0 00-1.5 1.5v10.5a1.5 1.5 0 001.5 1.5h10.5a1.5 1.5 0 001.5-1.5V10.5a.75.75 0 011.5 0v8.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V8.25a3 3 0 013-3h8.25a.75.75 0 010 1.5H5.25z" clip-rule="evenodd" />
+                </svg>
+            </span>
+        </a>
+
+
+        <div class="inline">
+            <div
+            x-data="{
+                open: false,
+                toggle() {
+                    if (this.open) {
+                        return this.close()
+                    }
+                    this.$refs.button.focus()
+                    this.open = true
+                },
+                close(focusAfter) {
+                    if (! this.open) return
+                    this.open = false
+                    focusAfter && focusAfter.focus()
+                }
+            }"
+            x-on:keydown.escape.prevent.stop="close($refs.button)"
+            x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+            x-id="['dropdown-button']"
+            class="relative inline"
+            >
+            <!-- Button -->
+            <button
+            x-ref="button"
+            x-on:click="toggle()"
+            :aria-expanded="open"
+            :aria-controls="$id('dropdown-button')"
+            type="button"
+            class="relative inline-flex items-center justify-center p-4 px-5 py-2 overflow-hidden font-medium no-underline text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500"
+            >
+            <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
+            <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+            <span class="relative text-white ">
+                <span>Download</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 mb-1 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+            </span>
+        </button>
+
+        <!-- Panel -->
+        <div
+        x-ref="panel"
+        x-show="open"
+        x-transition.origin.top.left
+        x-on:click.outside="close($refs.button)"
+        :id="$id('dropdown-button')"
+        style="display: none;"
+        class="absolute left-0 mt-2 w-40 rounded-md bg-white shadow-md"
+        >
+        <a href="/static/download/dan-smith-ux-designer.pdf" target="_blank" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left text-sm hover:bg-gray-50 disabled:text-gray-500 no-underline">
+            PDF
+        </a>
+
+        <a href="/static/download/dan-smith-ux-designer.docx" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left text-sm hover:bg-gray-50 disabled:text-gray-500 no-underline">
+            DOC
+        </a>
+
+        <a href="/static/download/dan-smith-ux-designer.md" target="_blank" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left text-sm hover:bg-gray-50 disabled:text-gray-500 no-underline">
+            Markdown
+        </a>
+
+        <a href="/static/download/dan-smith-ux-designer.json" target="_blank" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left text-sm hover:bg-gray-50 disabled:text-gray-500 no-underline">
+            JSON
+        </a>
     </div>
-    <article class="prose lg:prose-xl my-4 mx-auto">
-        Content</article>
+</div>
+</div>
 
+
+
+
+<h1 id="dan-smith">Dan Smith</h1>
+<h2 id="ux-designer">UX Designer</h2>
+<p><a href="mailto:dan@dansmithux.com">dan@dansmithux.com</a></p>
+<p><a href="https://dansmithux.com/">dansmithux.com</a></p>
+<p><a href="https://www.linkedin.com/in/dansmithux/">in/dansmithux</a></p>
+<h2 id="summary">Summary</h2>
+<p>Results-driven &amp; interdisciplinary UX designer with a proven history of creating data-driven, user-centered solutions. Proficient in effectively facilitating workshops, conducting comprehensive user research, and extracting valuable insights to inform design choices. Skilled in crafting solutions that meet both user needs and business objectives, and adept at creating &amp; maintaining design systems for consistency, efficiency, and scalability. A deep grasp of web technologies allows me to strategically design for optimal accessibility and performance. With a background as a collaborative musician, I excel in fostering communication and coordination with cross-functional teams to ensure impactful outcomes.</p>
+<h2 id="experience">Experience</h2>
+<h3 id="speaking-of-science">Speaking of Science</h3>
+<p><strong>UX Lead</strong></p>
+<p>November 2022 to present</p>
+<p><em>Remote</em></p>
+<ul>
+    <li>Led client workshops and research-driven design processes, successfully coordinating and executing work across user research, information architecture, visual design, and interaction design to ensure alignment of user needs and business goals, resulting in on-time project delivery and positive client feedback.</li>
+    <li>Implemented design systems in Figma, improving scalability and enhancing design consistency, resulting in reduced development time.</li>
+    <li>Collaborated effectively with cross-functional teams, including developers, designers, project managers, copywriters, and clients.</li>
+    <li>Guided and mentored junior UX practitioners, resulting in high-quality deliverables and professional development.</li>
+</ul>
+<p><strong>UX Designer &amp; Front-End Engineer</strong></p>
+<p>February 2021 to November 2022</p>
+<p><em>Remote</em></p>
+<ul>
+    <li>Contributed to designing and developing responsive healthcare websites and applications, emphasizing accessibility, simplicity, and usability.</li>
+</ul>
+<h3 id="o3">O3</h3>
+<p><strong>UX Strategist</strong></p>
+<p>February 2022 to September 2022</p>
+<p><em>Remote</em></p>
+<ul>
+    <li>Planned &amp; facilitated client-focused discovery workshops, driving collaboration to uncover user needs and establish project goals.</li>
+    <li>Conducted user research, including user interviews, usability testing, contextual inquiries, analytics analysis, competitive analysis, and A/B testing to inform design decisions.</li>
+    <li>Developed data-driven artifacts such as personas, journey maps, sitemaps, wireframes, wireflows, and prototypes to test hypotheses and guide decision-making.</li>
+    <li>Led interaction &amp; visual design efforts across multiple projects, creating new components and interactive features for design systems.</li>
+    <li>Performed heuristic evaluations and design quality assurance to maintain high standards of user experience, generating comprehensive reports and tracking action items through JIRA for timely completion.</li>
+    <li>Collaborated extensively with developers, designers, strategists, project managers, and senior leadership, utilizing tools like Figma, Miro, Zoom, Slack, JIRA, Notion, and Google Workspace for seamless communication and project coordination.</li>
+</ul>
+<h3 id="microsoft">Microsoft</h3>
+<p><strong>Software Engineer</strong></p>
+<p>March 2017 to April 2021</p>
+<p><em>Bellevue, WA / remote</em></p>
+<ul>
+    <li>Spearheaded pixel-perfect front-end development of responsive, accessible marketing websites for high-visibility product releases and conferences, including Dynamics 365, Power BI, Power Apps, Power Automate, and Power Virtual Agents, reaching millions of customers.</li>
+    <li>Collaborated with software engineers, product managers, and designers, providing feasibility feedback and cost-benefit analyses for new design patterns to ensure engineering practicality and design optimization.</li>
+    <li>Designed and developed enhancements and components for a Microsoft design system, focusing on scalability, consistency, accessibility, and usability.</li>
+    <li>Conducted heuristic evaluations and leveraged data-driven principles to provide UX best practice recommendations.</li>
+</ul>
+<h3 id="pitchbook-data">PitchBook Data</h3>
+<p><strong>Web Development Engineer</strong></p>
+<p>September 2015 to March 2017</p>
+<p><em>Seattle, WA</em></p>
+<ul>
+    <li>Demonstrated end-to-end involvement in planning, user research, design, and development of multiple applications and interfaces, resulting in a 200% increase in relevant data acquisition for the company.</li>
+    <li>Conceptualized, wireframed, designed, and developed an internal automation application that significantly enhanced employee task speed, leading to a 2,250% efficiency improvement.</li>
+    <li>Collaborated extensively with machine learning engineers, software engineers, UX designers, product managers, and non-technical stakeholders.</li>
+</ul>
+<h2 id="education">Education</h2>
+<h3 id="nielsen-norman-group">Nielsen Norman Group</h3>
+<p><strong>UX Master Certificate (UXMC)</strong></p>
+<p>Interaction Design &amp; UX Research Specialties</p>
+<p>2016–2022</p>
+<p><em>90 hours of interaction design and UX research coursework</em></p>
+<h3 id="maryland-institute-college-of-art">Maryland Institute College of Art</h3>
+<p><strong>Master of Professional Studies</strong></p>
+<p>User Experience Design</p>
+<p>2019–2020</p>
+<p><em>4.0 / 4.0 GPA</em></p>
+<p><em>Recipient of UX Design Thesis Award</em></p>
+<h3 id="general-assembly">General Assembly</h3>
+<p><strong>User Experience Design Certificate</strong></p>
+<p>2017</p>
+<p><em>Part-time course consisting of 40 instructional hours</em></p>
+<h3 id="general-assembly">General Assembly</h3>
+<p><strong>Web Development Immersive</strong></p>
+<p>2015</p>
+<p><em>Full-time course consisting of 480 instructional hours</em></p>
+<h3 id="western-washington-university">Western Washington University</h3>
+<p><strong>Bachelor of Arts</strong></p>
+<p>Music</p>
+<p>2009–2014</p>
+<p>3.56 / 4.0 GPA</p>
+<h2 id="skills">Skills</h2>
+<h3 id="ux-design">UX design</h3>
+<ul>
+    <li>Interaction design</li>
+    <li>Wireframing</li>
+    <li>Prototyping</li>
+    <li>Information architecture</li>
+    <li>Visual design</li>
+    <li>UX writing</li>
+    <li>Design thinking</li>
+</ul>
+<h3 id="ux-research">UX research</h3>
+<ul>
+    <li>User interviews</li>
+    <li>Usability testing</li>
+    <li>Contextual inquiry studies</li>
+    <li>Card sorting</li>
+    <li>Tree testing</li>
+    <li>A/B testing</li>
+</ul>
+<h3 id="web">Web</h3>
+<ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>WordPress</li>
+    <li>SQL</li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+    <li>Figma</li>
+    <li>Sketch</li>
+    <li>FigJam</li>
+    <li>Miro</li>
+    <li>Adobe Photoshop</li>
+    <li>Notion</li>
+    <li>JIRA</li>
+    <li>Sublime Text</li>
+    <li>GitHub / version control</li>
+    <li>Google Workspace</li>
+    <li>Microsoft Office</li>
+</ul>
+
+
+</div>
 </div>

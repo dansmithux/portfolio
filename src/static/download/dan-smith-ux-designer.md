@@ -1,21 +1,3 @@
----
-title: Résumé
-description: UX résumé
-date: 2023-08-01
-author: Dan Smith
----
-
-
-[View on Google Docs](https://docs.google.com/document/d/1sfX1Ojxv1UPvM-bxbcn_eE4zdITiOiz8nfV9NuNLYrA/edit?usp=sharing)
-
-[Download Word Document](#)
-
-[Download Markdown](#)
-
-[Download (pretty, formatted) PDF](#)
-
-
-
 # Dan Smith
 
 ## UX Designer

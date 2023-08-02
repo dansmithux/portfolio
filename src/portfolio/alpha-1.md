@@ -1,7 +1,7 @@
 ---
 title: Alpha-1 Foundation
-description: Web presence redesign for the Alpha-1 Foundation, a non-profit
-  funding research on lung and liver diseases associated with Alpha-1
+description: Complete website redesign for the Alpha-1 Foundation, a non-profit organization
+  that supports and funds research on lung and liver diseases associated with Alpha-1
   Antitrypsin Deficiency.
 author: Dan Smith
 date: 2023-08-02T05:27:44.132Z
