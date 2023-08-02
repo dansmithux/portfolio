@@ -1,10 +1,10 @@
 ---
-title: This is my first post
-description: Capitalize on low hanging fruit to identify a ballpark value added
-  activity to beta test. Override the digital divide with additional
-  clickthroughs from DevOps.
-author: Surjith S M
-date: 2020-09-01
+title: Alpha-1 Foundation
+description: Web presence redesign for the Alpha-1 Foundation, a non-profit
+  funding research on lung and liver diseases associated with Alpha-1
+  Antitrypsin Deficiency.
+author: Dan Smith
+date: 2023-08-02T05:27:44.132Z
 tags:
   - left
   - center
