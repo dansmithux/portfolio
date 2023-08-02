@@ -24,18 +24,23 @@ module.exports = function (eleventyConfig) {
   // You may remove this if you can use JSON
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
+
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
+    "./src/static/download/": "./static/download/",
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css":
       "./static/css/prism-tomorrow.css",
   });
+  
+  // Don't compile this résumé download file into HTML
+  eleventyConfig.ignores.add("./src/static/download/dan-smith-ux-designer.md");
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
 
-  eleventyConfig.addPassthroughCopy("./src/static/download/*");
+  // eleventyConfig.addPassthroughCopy("./src/static/download/*");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
