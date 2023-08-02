@@ -6,9 +6,11 @@ description: Web presence redesign for the Alpha-1 Foundation, a non-profit
 author: Dan Smith
 date: 2023-08-02T05:27:44.132Z
 tags:
-  - left
-  - center
-  - right
+  - User Research
+  - Information Architecture
+  - Interaction Design
+  - Visual Design
+  - Web Development
 ---
 # This is a Heading h1
 
