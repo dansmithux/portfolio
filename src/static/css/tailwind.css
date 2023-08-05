@@ -39,7 +39,7 @@ h3 {
 }
 
 .resume h4 {
-  @apply text-lg font-semibold mt-1;
+  @apply text-lg font-semibold mt-2;
 }
 
 ul.list-disc li {
