@@ -3,15 +3,18 @@ layout: default
 prism: true
 ---
 
-<div class="container max-w-4xl mt-6  px-6">
+<div class="container max-w-4xl mt-6  px-4">
     <div class="pb-5 mb-5 border-b border-gray-100">
         <h1 class="font-bold text-5xl">{{title}}</h1>
-        <p class="text-center text-base leading-6 font-medium text-gray-500">
-            <time> {{ date | readableDate }}
-                by
-                <a>{{ author }}</a>
 
-            </time>
+        <p class="text-center">
+            {% if tags %}
+                {% for tag in tags %}
+                    {% if tag != 'portfolio' %}
+                        <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">{{ tag }}</span>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
         </p>
 
     </div>
