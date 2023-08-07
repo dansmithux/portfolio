@@ -41,3 +41,27 @@ A1F needed their website completely redesigned to alleviate some of the followin
 ## Research & Discovery
 
 ### User Survey
+
+Link to survey
+
+Link to slide deck of results
+
+#### Key takeaways
+
+* asdf
+* asdf
+* asdf
+* asdf
+* asdf
+
+### Heuristic Evaluation
+
+Link to slide deck
+
+#### Key takeaways
+
+* asdf
+* asdf
+* asdf
+* asdf
+* asdf
