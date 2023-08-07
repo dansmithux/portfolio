@@ -65,3 +65,65 @@ Link to slide deck
 * asdf
 * asdf
 * asdf
+
+### Design Principles Workshop
+
+Link to slide deck
+
+#### Key takeaways
+
+* asdf
+* asdf
+* asdf
+* asdf
+* asdf
+
+#### Target audience
+
+Based on stakeholder interviews & survey results
+
+* Individuals newly diagnosed with AATD, seeking information and resources
+* Undiagnosed individuals; those seeking testing and genetic counseling
+
+#### Prioritized features
+
+Based on user research, workshops, and stakeholder discussion, features with the greatest impact were:
+
+* Specialist map
+
+  * Gated content / lead generation
+* Support group map
+
+  * Gated content / lead generation
+* Resource library
+
+  * Searchable resource section for users to find relevant information and materials about Alpha-1 and related topics
+* Video library
+
+  * Library of video content, searchable and filterable by events, speakers, topics
+* Calendar
+* News
+* Donations
+
+### Google Analytics Review
+
+Link to slide deck
+
+### Open card sort
+
+Hypothesis: based on established best practices and research, audience-segmented navigation creates confusion and forces users to self-identify into an audience category, while the information they seek could fall under multiple audience categories
+
+UXTweak for card sort platform:
+
+\[screenshot of card sort]
+
+#### Results
+
+* Validated hypothesis, showing that no respondents intrinsically sorted information into audience-segmented categories
+* Detracting factors for card sort:
+
+  * “Alpha-1” prefix on individual cards created grouping bias and compromised value of data
+  * Ambiguity of some individual cards compromised value of data (e.g. jargon, branding – difficult for new users to understand definitions)
+* Respondent-Centric Analysis (RCA): explored similarity of responses at varying thresholds to find patterns:
+
+\[screenshots of results]
