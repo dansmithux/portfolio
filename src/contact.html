@@ -6,15 +6,56 @@ eleventyExcludeFromCollections: true
 ---
 
 <div class="container max-w-4xl mt-6  px-4">
-    <div class="pb-5 mb-5 border-b border-gray-100">
+    <div class="">
         <h1 class="font-bold text-5xl">{{title}}</h1>
-        <p class="text-center text-base leading-6 font-medium text-gray-500">
-            Text
-        </p>
+    </div>
+    <div class="my-8 mx-auto">
+        
+
+        <div class="w-full">
+          <form class="md:p-8 md:border md:rounded md:border-gray-200 md:bg-white">
+            <p class="hidden">
+                <label>
+                    Don't fill this out if you're human: <input name="bot-field" />
+                </label>
+            </p>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                Name
+              </label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name">
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                Email
+              </label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                    Message
+                </label>
+                <textarea id="message" rows="4" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Message"></textarea>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
+            <div class="flex items-center justify-between">
+
+                <button class="relative inline-flex items-center justify-center p-4 px-5 py-2 mr-2 overflow-hidden font-medium no-underline text-indigo-600 transition duration-300 ease-out rounded-full group" type="submit">
+                    <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
+                    <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                    <span class="relative text-white ">
+                        <span class="">Send</span>
+
+                    </span>
+                </button>
+
+            </div>
+          </form>
+        </div>
+
 
     </div>
-    <article class="prose lg:prose-xl my-4 mx-auto">
-        Content
-    </article>
 
 </div>
+
+
