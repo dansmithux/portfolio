@@ -30,24 +30,6 @@ collections:
         multiple: true
         create: true
         options: ["User Research", "Information Architecture", "Interaction Design", "Visual Design", "Web Development"]
-  - label: "Blog"
-    name: "blog"
-    folder: "src/blog"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
   - label: "Settings"
     name: "settings"
     editor:
@@ -77,6 +59,7 @@ collections:
               - { label: Title, name: title, widget: string }
               - { label: URL, name: url, widget: string }
               - { label: Description, name: desc, widget: string }
+              - { label: ID, name: id, widget: string }
       - label: "Meta Settings"
         name: "settings"
         file: "src/_data/settings.yaml"

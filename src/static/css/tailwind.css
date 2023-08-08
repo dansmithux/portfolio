@@ -53,12 +53,6 @@ h3 {
   font-family: 'Fuzzy Bubbles', cursive;
 }
 
-.chips {
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-}
-
 /* Syntax Highlighting*/
 
 body :not(pre) > code[class*="language-"],

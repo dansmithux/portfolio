@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
 <div class="w-full grid grid-cols-1 gap-6 my-8 lg:mx-0">
     {% set postslist = collections.portfolio %}
     {% for post in postslist | reverse %}
-        <a href="{{ post.url | url }}" class="p-5 bg-white border rounded border-gray-200 shadow-md hover:border-blue-600">
+        <a href="{{ post.url | url }}" class="p-5 bg-white border rounded-xl border-gray-200 shadow-md hover:border-blue-600">
             <h3>{% if post.data.title %}
                         {{ post.data.title }}
                     {% else %}
@@ -24,7 +24,7 @@ eleventyExcludeFromCollections: true
                 <div class="mt-4">
                     {% for tag in post.data.tags %}
                         {% if tag != layout %}
-                            <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">{{ tag }}</span>
+                            <span class="inline-flex items-center bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">{{ tag }}</span>
                         {% endif %}
                     {% endfor %}
                 </div>
