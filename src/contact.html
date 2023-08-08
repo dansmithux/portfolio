@@ -11,7 +11,7 @@ eleventyExcludeFromCollections: true
     </div>
     <div class="my-8 mx-auto">
 
-        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="md:p-8 md:border md:rounded md:border-gray-200 md:bg-white">
+        <form id="contact" name="contact" method="POST" action="/" data-netlify="true" data-netlify-recaptcha="true" class="md:p-8 md:border md:rounded md:border-gray-200 md:bg-white">
             <p class="hidden">
                 <label>
                     Don't fill this out if you're human: <input name="bot-field" />
@@ -50,27 +50,31 @@ eleventyExcludeFromCollections: true
             </button>
         </form>
 
+        <div class="contact-form-result"></div>
+
     </div>
 </div>
 
 <script>
-    var handleSubmit = function(event) {
-        event.preventDefault();
+    const contactForm = document.getElementById("contact"), submitMessage = document.getElementById("contact-form-result");
 
-        const myForm = event.target;
-        const formData = new FormData(myForm);
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      let formData = new FormData(contactForm);
 
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => {
+          submitMessage.innerHTML = `<div class="alert alert-success alert-dismissible fade show" role="alert"><strong>Grazie!</strong> La richiesta è stata inviata, ti ricontatteremo al più presto.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`;
+          contactForm.reset();
         })
-        .then(function) {
-            console.log("Form successfully submitted")
-        .catch(function(error) { 
-            alert(error) }
-        )};
+        .catch((error) => {
+          submitMessage.innerHTML = `<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>Errore!</strong> La richiesta non è stata inviata, per favore riprova più tardi.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`;
+        });
     };
 
-    document.querySelector("form").addEventListener("submit", handleSubmit);
+    contactForm.addEventListener("submit", handleSubmit);
 </script>
