@@ -3,12 +3,12 @@ links:
   - title: Résumé
     url: "/resume/"
     desc: Explore my background, experience, education & skills
-    icon: "document-text"
+    icon: "resume"
   - title: Portfolio
     url: "/portfolio/"
     desc: Dive into my UX work through detailed case studies
-    icon: "briefcase"
+    icon: "portfolio"
   - title: Contact
     url: "/contact/"
     desc: Get in touch to connect and collaborate
-    icon: "paper-airplane"
+    icon: "contact"
