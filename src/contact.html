@@ -21,19 +21,19 @@ eleventyExcludeFromCollections: true
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
                     Name
                 </label>
-                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="text" placeholder="Name">
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:outline-blue-600 focus:shadow-outline" id="name" name="name" type="text" placeholder="Name">
             </div>
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
                     Email
                 </label>
-                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" type="email" placeholder="Email">
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:outline-blue-600 focus:shadow-outline" id="email" name="email" type="email" placeholder="Email">
             </div>
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
                     Message
                 </label>
-                <textarea id="message" name="message" rows="4" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Message"></textarea>
+                <textarea id="message" name="message" rows="4" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:outline-blue-600 focus:shadow-outline" placeholder="Message"></textarea>
             </div>
             <div data-netlify-recaptcha="true" class="mb-4"></div>
 
@@ -56,25 +56,25 @@ eleventyExcludeFromCollections: true
 </div>
 
 <script>
-    const contactForm = document.getElementById("contact"), submitMessage = document.getElementById("contact-form-result");
+    // const contactForm = document.getElementById("contact"), submitMessage = document.getElementById("contact-form-result");
 
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      let formData = new FormData(contactForm);
+    // const handleSubmit = (e) => {
+    //   e.preventDefault();
+    //   let formData = new FormData(contactForm);
 
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-        .then(() => {
-          submitMessage.innerHTML = `<div class="alert alert-success alert-dismissible fade show" role="alert"><strong>Grazie!</strong> La richiesta è stata inviata, ti ricontatteremo al più presto.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`;
-          contactForm.reset();
-        })
-        .catch((error) => {
-          submitMessage.innerHTML = `<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>Errore!</strong> La richiesta non è stata inviata, per favore riprova più tardi.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`;
-        });
-    };
+    //   fetch("/", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //     body: new URLSearchParams(formData).toString(),
+    //   })
+    //     .then(() => {
+    //       submitMessage.innerHTML = `<div class="alert alert-success alert-dismissible fade show" role="alert"><strong>Grazie!</strong> La richiesta è stata inviata, ti ricontatteremo al più presto.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`;
+    //       contactForm.reset();
+    //     })
+    //     .catch((error) => {
+    //       submitMessage.innerHTML = `<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>Errore!</strong> La richiesta non è stata inviata, per favore riprova più tardi.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`;
+    //     });
+    // };
 
-    contactForm.addEventListener("submit", handleSubmit);
+    // contactForm.addEventListener("submit", handleSubmit);
 </script>
