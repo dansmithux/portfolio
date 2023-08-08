@@ -1,4 +1,4 @@
-<div class="w-full max-w-4xl grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10 px-4 lg:mx-0 animate__animated animate__fadeIn">
+<div class="w-full max-w-4xl grid grid-cols-1 lg:grid-cols-3 gap-4 mt-12 px-4 lg:mx-0 animate__animated animate__fadeInUp animate__fast">
 
     {% if quicklinks.links %}
 
@@ -32,7 +32,7 @@
                     <h3>{{item.title}}
                         <!-- → -->
                     </h3>
-                    <p class="mt-1 leading-snug">{{item.desc}}</p>
+                    <p class="mt-1 leading-snug">{{item.desc | safe}}</p>
                 </div>
             </a>
         {% endfor %}

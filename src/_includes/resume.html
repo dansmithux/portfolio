@@ -8,7 +8,7 @@ prism: true
         <h1 class="font-bold text-5xl md:float-left">{{title}}</h1>
         <div class="text-center md:float-right mt-2">
 
-            <a href="https://docs.google.com/document/d/1sfX1Ojxv1UPvM-bxbcn_eE4zdITiOiz8nfV9NuNLYrA/edit?usp=sharing" target="_blank" class="relative inline-flex items-center justify-center p-4 px-5 py-2 mr-2 overflow-hidden font-medium no-underline text-indigo-600 transition duration-300 ease-out rounded-full group">
+            <a href="https://docs.google.com/document/d/1sfX1Ojxv1UPvM-bxbcn_eE4zdITiOiz8nfV9NuNLYrA/edit?usp=sharing" target="_blank" class="relative inline-flex items-center justify-center p-4 px-5 py-2 my-2 sm:mx-2 overflow-hidden font-medium no-underline text-indigo-600 transition duration-300 ease-out rounded-full group w-full sm:w-auto">
                 <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
                 <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
                 <span class="relative text-white ">
@@ -19,7 +19,7 @@ prism: true
                 </span>
             </a>
 
-            <div class="inline-block">
+            <div class="sm:inline-block">
                 <div
                 x-data="{
                     open: false,
@@ -48,7 +48,7 @@ prism: true
                         :aria-expanded="open"
                         :aria-controls="$id('dropdown-button')"
                         type="button"
-                        class="relative inline-flex items-center justify-center p-4 px-5 py-2 overflow-hidden font-medium no-underline text-indigo-600 transition duration-300 ease-out rounded-full group"
+                        class="relative inline-flex items-center justify-center p-4 px-5 py-2 sm:mx-2 overflow-hidden font-medium no-underline text-indigo-600 transition duration-300 ease-out rounded-full group w-full sm:w-auto"
                         >
                         <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
                         <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>

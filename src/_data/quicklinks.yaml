@@ -2,13 +2,13 @@
 links:
   - title: Résumé
     url: "/resume/"
-    desc: Explore my background, experience, education & skills
+    desc: Explore my background, experience, education &&nbsp;skills
     icon: "resume"
   - title: Portfolio
     url: "/portfolio/"
-    desc: Dive into my UX work through detailed case studies
+    desc: Dive into my UX work through detailed case&nbsp;studies
     icon: "portfolio"
   - title: Contact
     url: "/contact/"
-    desc: Get in touch to connect and collaborate
+    desc: Get in touch to connect and&nbsp;collaborate
     icon: "contact"

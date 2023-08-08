@@ -10,14 +10,13 @@ eleventyExcludeFromCollections: true
     {% for post in postslist | reverse %}
         <a href="{{ post.url | url }}" class="p-5 bg-white border rounded-xl border-gray-200 shadow-md hover:border-blue-600">
             <h3>{% if post.data.title %}
-                        {{ post.data.title }}
+                        {{ post.data.title | addNbsp | safe }}
                     {% else %}
                         Untitled
-                    {% endif %}
-                →</h3>
+                    {% endif %}</h3>
             {% if post.data.description %}
                 <p class="text-lg text-gray-500 leading-snug mt-2">
-                    {{ post.data.description }}
+                    {{ post.data.description | addNbsp | safe }}
                 </p>
             {% endif %}
             {% if post.data.tags %}
