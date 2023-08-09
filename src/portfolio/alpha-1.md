@@ -86,12 +86,10 @@ From survey results and stakeholder workshop / discussions, decided primary audi
 
 From survey results, heuristic evaluation, and stakeholder workshop / discussions, decided most impactful features would be:
 
-* Specialist map & support group map
-
-  * with gated content to improve lead generation
+* Specialist map & support group map with gated content to improve lead generation
 * Resource library
 
-  * Searchable resource section for users to find relevant literature and materials about Alpha-1 and related topics
+  * Searchable resource section for users to find relevant literature and materials about AATD
 * Video library
 
   * Library of video content, searchable and filterable by events, speakers, topics
@@ -103,22 +101,22 @@ From survey results, heuristic evaluation, and stakeholder workshop / discussion
 
 * Visitor Engagement
 
-  * Vast majority of visitors spending 0–10 seconds on site
+  * Vast majority of visitors spent 0–10 seconds on site
 * Bounced Sessions
 
-  * High bounce rate: many users are not engaging with the site
+  * High bounce rate: many users were not engaging with the site
 * Content Drilldown
 
-  * A1F site has over 700 pages of content; traffic drops off significantly in the top 20 pages
+  * A1F site had over 700 pages of content; traffic dropped off significantly in the top 20 pages
 * Demographics
 
-  * Insights differ from user experience survey results, suggesting different audience for newsletter and Facebook vs. website
+  * Insights differed from user experience survey results, suggesting different audience for newsletter / Facebook vs. website traffic
 
 ### Open card sort
 
 Hypothesis: based on established best practices and research, audience-segmented navigation creates confusion and forces users to self-identify into an audience category, while the information they seek could fall under multiple audience categories
 
-UXTweak for card sort platform:
+Card sort on UXTweak research platform:
 
 \[screenshot of card sort]
 
