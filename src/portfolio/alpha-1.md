@@ -42,72 +42,77 @@ A1F needed their website completely redesigned to alleviate some of the followin
 
 ### User Survey
 
-Link to survey
+[View survey](https://docs.google.com/forms/d/e/1FAIpQLScS1nlyTvtyvsJQJZR9QnP5kA_MQEnpNy7Ky4w_0Y_gTKxGVQ/viewform?usp=sf_link)
 
-Link to slide deck of results
+[View slide deck of results](https://docs.google.com/presentation/d/1wgA_QIO9slsiIZhmV-3LV_2BH1xsakJn45qkSqZuJ9c/edit?usp=sharing)
 
 #### Key takeaways
 
-* asdf
-* asdf
-* asdf
-* asdf
-* asdf
+* Comprehensive Information Hub: Users appreciate the website's extensive Alpha-1 information, finding it relevant, useful, and informative.
+* Relevance Across Disease Journey: The site effectively caters to users at various stages of their Alpha-1 journey, offering valuable content that evolves with their understanding.
+* Community Support: The website fosters a strong sense of community, evident in the positive feedback that highlights its role in creating a supportive environment.
+* Addressing Information Gaps: The website bridges the information gap left by healthcare professionals regarding Alpha-1, offering unique insights not readily available elsewhere.
+* Enhanced Usability: Users express concerns about overwhelming content, non-intuitive navigation, and mobile-unfriendly design. Improving organization and mobile responsiveness can enhance user experience.
+* Effective Information Management: Implementing user-friendly navigation and organized content structures can address the challenge of overwhelming information, making content easier to discover and explore.
 
 ### Heuristic Evaluation
 
-Link to slide deck
-
-#### Key takeaways
-
-* asdf
-* asdf
-* asdf
-* asdf
-* asdf
+[View heuristic evaluation slide deck](https://docs.google.com/presentation/d/1yO5RDsCSf9dPQ_iEZg2C201HY9zSWoj71h5thvPH-iU/edit?usp=sharing)
 
 ### Design Principles Workshop
 
-Link to slide deck
+* Design principles & feature prioritization based on survey and heuristic evaluation
+* Participants: staff / stakeholders of A1F
+* Prompted with 3 “how might \[we]…” questions to engage empathetically with users
 
-#### Key takeaways
+[View design principles slide deck](https://docs.google.com/presentation/d/1vYiEO0Cfs96iPV8dvVqk-kxi2jcs9tc5B5z_eqJyrTk/edit?usp=sharing)
 
-* asdf
-* asdf
-* asdf
-* asdf
-* asdf
+#### Finalized design principles
+
+* Simplicity & minimalism to help offset potential pre-existing overwhelm
+* Intuitive structure to help people efficiently find the information they need
+* Empathic & sensitive to user needs
+* Data-driven to solve the right problems
+* Accessibility & inclusivity as a focus (ADA compliance)
 
 #### Target audience
 
-Based on stakeholder interviews & survey results
+From survey results and stakeholder workshop / discussions, decided primary audiences for redesign would be:
 
 * Individuals newly diagnosed with AATD, seeking information and resources
 * Undiagnosed individuals; those seeking testing and genetic counseling
 
 #### Prioritized features
 
-Based on user research, workshops, and stakeholder discussion, features with the greatest impact were:
+From survey results, heuristic evaluation, and stakeholder workshop / discussions, decided most impactful features would be:
 
-* Specialist map
+* Specialist map & support group map
 
-  * Gated content / lead generation
-* Support group map
-
-  * Gated content / lead generation
+  * with gated content to improve lead generation
 * Resource library
 
-  * Searchable resource section for users to find relevant information and materials about Alpha-1 and related topics
+  * Searchable resource section for users to find relevant literature and materials about Alpha-1 and related topics
 * Video library
 
   * Library of video content, searchable and filterable by events, speakers, topics
-* Calendar
-* News
-* Donations
+* Calendar of events
+* News / blog
+* Redesigned donation form
 
 ### Google Analytics Review
 
-Link to slide deck
+* Visitor Engagement
+
+  * Vast majority of visitors spending 0–10 seconds on site
+* Bounced Sessions
+
+  * High bounce rate: many users are not engaging with the site
+* Content Drilldown
+
+  * A1F site has over 700 pages of content; traffic drops off significantly in the top 20 pages
+* Demographics
+
+  * Insights differ from user experience survey results, suggesting different audience for newsletter and Facebook vs. website
 
 ### Open card sort
 
