@@ -120,9 +120,9 @@ Hypothesis: based on established best practices and research, audience-segmented
 
 Card sort on UXTweak research platform:
 
-![Screenshot of a card sort](/static/img/screenshot-2023-08-10-at-12.59.43-pm.png "Card sort")
+![Screenshot of A1F card sort](/static/img/screenshot-2023-08-10-at-12.59.43-pm.png "Screenshot of A1F card sort")
 
-\[screenshot of card sort]
+
 
 #### Results
 
@@ -133,4 +133,4 @@ Card sort on UXTweak research platform:
   * Ambiguity of some individual cards compromised value of data (e.g. jargon, branding – difficult for new users to understand definitions)
 * Respondent-Centric Analysis (RCA): explored similarity of responses at varying thresholds to find patterns:
 
-\[screenshots of results]
+![Card sort results](/static/img/screenshot-2023-01-05-at-1.21.56-pm.png "Card sort results")
