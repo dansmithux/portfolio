@@ -3,7 +3,22 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
+
 module.exports = function (eleventyConfig) {
+
+  let markdownIt = require('markdown-it')
+  let markdownItAttrs = require('markdown-it-attrs')
+
+  let markdownItOptions = {
+    html: true,
+    breaks: true,
+    linkify: true
+  }
+
+  let markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
+
+  eleventyConfig.setLibrary('md', markdownLib);
+
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 

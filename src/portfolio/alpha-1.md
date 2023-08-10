@@ -54,9 +54,9 @@ To address both user needs and business objectives effectively, we devised a res
 
 ### User Survey
 
-[View survey](https://docs.google.com/forms/d/e/1FAIpQLScS1nlyTvtyvsJQJZR9QnP5kA_MQEnpNy7Ky4w_0Y_gTKxGVQ/viewform?usp=sf_link)
+[View survey](https://docs.google.com/forms/d/e/1FAIpQLScS1nlyTvtyvsJQJZR9QnP5kA_MQEnpNy7Ky4w_0Y_gTKxGVQ/viewform?usp=sf_link){target="_blank" rel="noopener"}
 
-[View slide deck of results](https://docs.google.com/presentation/d/1wgA_QIO9slsiIZhmV-3LV_2BH1xsakJn45qkSqZuJ9c/edit?usp=sharing)
+[View slide deck of results](https://docs.google.com/presentation/d/1wgA_QIO9slsiIZhmV-3LV_2BH1xsakJn45qkSqZuJ9c/edit?usp=sharing){target="_blank" rel="noopener"}
 
 #### Key takeaways
 
@@ -69,7 +69,7 @@ To address both user needs and business objectives effectively, we devised a res
 
 ### Heuristic Evaluation
 
-[View heuristic evaluation slide deck](https://docs.google.com/presentation/d/1yO5RDsCSf9dPQ_iEZg2C201HY9zSWoj71h5thvPH-iU/edit?usp=sharing)
+[View heuristic evaluation slide deck](https://docs.google.com/presentation/d/1yO5RDsCSf9dPQ_iEZg2C201HY9zSWoj71h5thvPH-iU/edit?usp=sharing){target="_blank" rel="noopener"}
 
 ### Design Principles Workshop
 
@@ -77,7 +77,7 @@ To address both user needs and business objectives effectively, we devised a res
 * Participants: staff / stakeholders of A1F
 * Prompted with 3 “how might \[we]…” questions to engage empathetically with users
 
-[View design principles slide deck](https://docs.google.com/presentation/d/1vYiEO0Cfs96iPV8dvVqk-kxi2jcs9tc5B5z_eqJyrTk/edit?usp=sharing)
+[View design principles slide deck](https://docs.google.com/presentation/d/1vYiEO0Cfs96iPV8dvVqk-kxi2jcs9tc5B5z_eqJyrTk/edit?usp=sharing){target="_blank" rel="noopener"}
 
 #### Finalized design principles
 
@@ -145,7 +145,7 @@ Card sort on UXTweak research platform:
 
 ## Information Architecture
 
-[Iteration of IA based on results of card sort](https://docs.google.com/presentation/d/1jsigkbcB9x0nALsfkAxvNcnKUzlwZhSEa6WnaO16ivc/edit?usp=sharing)
+[Iteration of IA based on results of card sort](https://docs.google.com/presentation/d/1jsigkbcB9x0nALsfkAxvNcnKUzlwZhSEa6WnaO16ivc/edit?usp=sharing){target="_blank" rel="noopener"}
 
 * Main navigation with topic-based category organization
 * Secondary “eyebrow” navigation for high-priority features/pages
@@ -154,11 +154,11 @@ Card sort on UXTweak research platform:
 
 ## Design
 
-[Component benchmarking slide deck](https://docs.google.com/presentation/d/1xzoWdyd9Z8zbvlMer_pdlAUD_BplqoNJIQXzB-vLvrI/edit?usp=sharing) (led by visual designer; contributed ideas)
+[Component benchmarking slide deck](https://docs.google.com/presentation/d/1xzoWdyd9Z8zbvlMer_pdlAUD_BplqoNJIQXzB-vLvrI/edit?usp=sharing){target="_blank" rel="noopener"} (led by visual designer; contributed ideas)
 
-[Design concepting slide deck](https://docs.google.com/presentation/d/1jg4ylyEbU9A9oaQLOuo1RJLQ1fbFy4cV8ltDp4zVxYI/edit?usp=sharing) (led by visual designer)
+[Design concepting slide deck](https://docs.google.com/presentation/d/1jg4ylyEbU9A9oaQLOuo1RJLQ1fbFy4cV8ltDp4zVxYI/edit?usp=sharing){target="_blank" rel="noopener"} (led by visual designer)
 
-[Figma file of design ideation, components, and mockups](https://www.figma.com/file/85a8knSxKXBi0NGaapPgJb/Alpha-1-Foundation?type=design&node-id=0%3A1&mode=design&t=xs8oMSXNlhjPIwF9-1)
+[Figma file of design ideation, components, and mockups](https://www.figma.com/file/85a8knSxKXBi0NGaapPgJb/Alpha-1-Foundation?type=design&node-id=0%3A1&mode=design&t=xs8oMSXNlhjPIwF9-1){target="_blank" rel="noopener"}
 
 * Navigation
 * Visual design of components & content pages
