@@ -40,6 +40,8 @@ A1F needed their website completely redesigned to alleviate some of the followin
 
 ## Research & Discovery
 
+To address both user needs and business objectives effectively, we devised a research approach that combines both quantitative and qualitative research methods.
+
 ### User Survey
 
 [View survey](https://docs.google.com/forms/d/e/1FAIpQLScS1nlyTvtyvsJQJZR9QnP5kA_MQEnpNy7Ky4w_0Y_gTKxGVQ/viewform?usp=sf_link)
@@ -117,6 +119,8 @@ From survey results, heuristic evaluation, and stakeholder workshop / discussion
 Hypothesis: based on established best practices and research, audience-segmented navigation creates confusion and forces users to self-identify into an audience category, while the information they seek could fall under multiple audience categories
 
 Card sort on UXTweak research platform:
+
+![Screenshot of a card sort](/static/img/screenshot-2023-08-10-at-12.59.43-pm.png "Card sort")
 
 \[screenshot of card sort]
 
