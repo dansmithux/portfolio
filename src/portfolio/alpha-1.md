@@ -36,6 +36,18 @@ A1F needed their website completely redesigned to alleviate some of the followin
   * Target younger audience, possibly undiagnosed people starting families
 * Increase email newsletter signup conversion
 
+### Team
+
+The team for this project consisted of a:
+
+* Project owner / copywriter
+* Project manager / copywriter
+* WordPress developer
+* Visual designer
+* UX lead (UX researcher & UX designer)
+* Junior UX researcher
+* Junior UX designer
+
 ## Research & Discovery
 
 To address both user needs and business objectives effectively, we devised a research approach that combines both quantitative and qualitative research methods.
@@ -136,6 +148,80 @@ Card sort on UXTweak research platform:
 [Iteration of IA based on results of card sort](https://docs.google.com/presentation/d/1jsigkbcB9x0nALsfkAxvNcnKUzlwZhSEa6WnaO16ivc/edit?usp=sharing)
 
 * Main navigation with topic-based category organization
-* Secondary “eyebrow” navigation for high-priority features / pages
+* Secondary “eyebrow” navigation for high-priority features/pages
 * Footer with some curated categories (Newly Diagnosed, Healthcare Providers, Resources)
 * Category sidebar navigation for content pages (instead of category overview/landing pages)
+
+## Design
+
+[Component benchmarking slide deck](https://docs.google.com/presentation/d/1xzoWdyd9Z8zbvlMer_pdlAUD_BplqoNJIQXzB-vLvrI/edit?usp=sharing) (led by visual designer; contributed ideas)
+
+[Design concepting slide deck](https://docs.google.com/presentation/d/1jg4ylyEbU9A9oaQLOuo1RJLQ1fbFy4cV8ltDp4zVxYI/edit?usp=sharing) (led by visual designer)
+
+[Figma file of design ideation, components, and mockups](https://www.figma.com/file/85a8knSxKXBi0NGaapPgJb/Alpha-1-Foundation?type=design&node-id=0%3A1&mode=design&t=xs8oMSXNlhjPIwF9-1)
+
+* Navigation
+* Visual design of components & content pages
+* Design system
+* Interaction design
+* Prototyping with code (interactive maps)
+
+## Results & outcomes
+
+* View new website
+
+  * Specialist map
+  * Support group map
+* Preliminary feedback
+
+  * Information is easily accessible on all screen sizes and devices
+  * Video library & resource library make it easy to find educational materials
+  * Specialist and support group maps are easy to use
+  * Design is clean and modern
+
+## Lessons learned
+
+* Scope creep
+
+  * Define "done" at the beginning at be strict about additional features & requests
+*
+
+## What’s next
+
+* Usability testing
+
+  * Usability enhancements
+* Tree testing & IA refinements
+* Additional features
+
+  * Alpha Angels (memorial database)
+  * Clinical trials finder
+
+## Contributions
+
+* UX research
+
+  * Survey
+  * Heuristic evaluation
+  * Design workshop
+  * Card sort
+* Information architecture
+
+  * Sitemap
+  * Navigation design
+* Lead generation strategy & form design
+* Design system
+
+  * Assisted with typography & color scheme
+  * Navigation design
+  * Assisted with component design
+  * Assisted with layout design
+  * Interactive specialist map & support group maps
+  * Strategically leveraged Bootstrap 5 as base for component design, resulting in faster development and customization
+* Assisted with front-end & WordPress development
+* UX lead
+
+  * Broke work down into phases, sprints, & tasks; provided time estimates
+  * Mentored & allocated work to a junior UX researcher & a junior UX designer
+  * Collaborated with & allocated work to a visual designer & a front-end developer
+  * Client & vendor communication / coordination
