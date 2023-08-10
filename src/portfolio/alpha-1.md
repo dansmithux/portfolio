@@ -12,9 +12,7 @@ tags:
   - Visual Design
   - Web Development
 ---
-## Introduction
-
-### Background
+## Background
 
 * The Alpha-1 Foundation (A1F) funds research for Alpha-1 Antitrypsin Deficiency (AATD) – a rare genetic disorder that elevates the risk of lung and liver diseases, occurring in approximately 1 in every 2,000 to 5,000 individuals. A1F promotes early detection through genetic testing and studies, supports a DNA and tissue bank and research registry, and is affiliated with over 80 clinical centers that offer specialized care to individuals with AATD. They also provide medical education to healthcare professionals and patient education through regional events, literature, and referrals.
 
@@ -77,14 +75,14 @@ To address both user needs and business objectives effectively, we devised a res
 * Data-driven to solve the right problems
 * Accessibility & inclusivity as a focus (ADA compliance)
 
-#### Target audience
+#### Target audience \[might reorder to another section]
 
 From survey results and stakeholder workshop / discussions, decided primary audiences for redesign would be:
 
 * Individuals newly diagnosed with AATD, seeking information and resources
 * Undiagnosed individuals; those seeking testing and genetic counseling
 
-#### Prioritized features
+#### Prioritized features \[might reorder to another section]
 
 From survey results, heuristic evaluation, and stakeholder workshop / discussions, decided most impactful features would be:
 
@@ -122,8 +120,6 @@ Card sort on UXTweak research platform:
 
 ![Screenshot of A1F card sort](/static/img/screenshot-2023-08-10-at-12.59.43-pm.png "Screenshot of A1F card sort")
 
-
-
 #### Results
 
 * Validated hypothesis, showing that no respondents intrinsically sorted information into audience-segmented categories
@@ -134,3 +130,12 @@ Card sort on UXTweak research platform:
 * Respondent-Centric Analysis (RCA): explored similarity of responses at varying thresholds to find patterns:
 
 ![Card sort results](/static/img/screenshot-2023-01-05-at-1.21.56-pm.png "Card sort results")
+
+## Information Architecture
+
+[Iteration of IA based on results of card sort](https://docs.google.com/presentation/d/1jsigkbcB9x0nALsfkAxvNcnKUzlwZhSEa6WnaO16ivc/edit?usp=sharing)
+
+* Main navigation with topic-based category organization
+* Secondary “eyebrow” navigation for high-priority features / pages
+* Footer with some curated categories (Newly Diagnosed, Healthcare Providers, Resources)
+* Category sidebar navigation for content pages (instead of category overview/landing pages)
