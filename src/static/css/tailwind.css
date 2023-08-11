@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-  @apply text-3xl font-bold;
+  @apply text-4xl font-bold;
 }
 
 h3 {
@@ -47,6 +47,23 @@ h3 {
 
 .resume h4 {
   @apply text-lg font-semibold mt-2;
+}
+
+.prose h2 {
+  @apply text-4xl font-bold mt-0 mb-4;
+}
+
+.prose h3 {
+  @apply text-2xl font-semibold mt-8 mb-3;
+}
+
+.prose h4 {
+  @apply text-lg font-semibold mt-8 mb-3;
+}
+
+.prose a {
+  text-decoration: none;
+  @apply block mt-2 hover:text-blue-600;
 }
 
 .cursive {
