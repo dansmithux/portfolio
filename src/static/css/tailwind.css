@@ -63,7 +63,8 @@ h3 {
 
 .prose a {
   text-decoration: none;
-  @apply block mt-2 hover:text-blue-600;
+  @apply inline-block rounded-full border border-gray-200 px-4 py-2 hover:text-blue-600 hover:border-blue-600;
+  font-weight: 500;
 }
 
 .cursive {
