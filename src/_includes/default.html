@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
@@ -22,8 +22,9 @@
     {% if prism == true %}
       <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
     {% endif %}
+
   </head>
-  <body>
+  <body class="bg-gray-50 dark:bg-gray-950">
     {% include "./partials/navbar.html" %}
 
     {{ content | safe }}
@@ -37,6 +38,45 @@
       <!-- Needed only if you are using Netlify Identity feature -->
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
+
+    <script>
+      
+      function themeCheck() {
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      };
+
+      themeCheck();
+
+      let lightMode = document.getElementById("light-mode-toggle");
+      let darkMode = document.getElementById("dark-mode-toggle");
+      let systemMode = document.getElementById("system-mode-toggle");
+
+      lightMode.addEventListener("click", function(e) {
+        e.preventDefault();
+        // Eser explicitly chooses light mode
+        localStorage.theme = 'light';
+        document.documentElement.classList.remove('dark');
+      });
+
+      darkMode.addEventListener("click", function(e) {
+        e.preventDefault();
+        // User explicitly chooses dark mode
+        localStorage.theme = 'dark';
+        document.documentElement.classList.add('dark');
+      });
+
+      systemMode.addEventListener("click", function(e) {
+        e.preventDefault();
+        // User explicitly chooses to respect the OS preference
+        localStorage.removeItem('theme');
+        themeCheck();
+      });
+    </script>
 
     <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
 

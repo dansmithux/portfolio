@@ -11,7 +11,7 @@ prism: true
             {% if tags %}
                 {% for tag in tags %}
                     {% if tag != 'portfolio' %}
-                        <span class="inline-flex items-center bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">{{ tag }}</span>
+                        <span class="inline-flex items-center bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10 dark:bg-blue-900 dark:border-blue-800 dark:text-blue-200 dark:ring-blue-100/10">{{ tag }}</span>
                     {% endif %}
                 {% endfor %}
             {% endif %}
