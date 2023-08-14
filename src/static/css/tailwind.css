@@ -7,6 +7,9 @@
 body {
   font-family: 'Libre Franklin', sans-serif;
   @apply text-gray-800 dark:text-white;
+/*  background-image: url("/static/img/green.jpg");*/
+/*  background-size: cover;*/
+/*  background-attachment: fixed;*/
 }
 
 

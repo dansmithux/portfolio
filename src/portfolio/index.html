@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
 <div class="w-full grid grid-cols-1 gap-6 my-8 lg:mx-0">
     {% set postslist = collections.portfolio %}
     {% for post in postslist | reverse %}
-        <a href="{{ post.url | url }}" class="p-5 bg-white border rounded-xl border-gray-200 shadow-md hover:border-blue-600 dark:hover:border-blue-600 dark:bg-gray-950 dark:border-gray-800 dark:text-gray-200">
+        <a href="{{ post.url | url }}" class="p-5 bg-white border rounded-xl border-gray-200 shadow-md hover:border-blue-600 dark:hover:border-blue-600 dark:bg-gray-900 dark:border-gray-800 dark:text-gray-200">
             <h3>{% if post.data.title %}
                         {{ post.data.title | addNbsp | safe }}
                     {% else %}
