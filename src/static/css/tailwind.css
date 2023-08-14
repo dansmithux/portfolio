@@ -10,6 +10,19 @@ body {
 }
 
 
+#light-mode-icon {
+  display: block;
+}
+#dark-mode-icon {
+  display: none;
+}
+.dark #light-mode-icon {
+  display: none;
+}
+.dark #dark-mode-icon {
+  display: block;
+}
+
 .prose {
   max-width: unset;
 }
