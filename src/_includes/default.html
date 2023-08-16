@@ -78,7 +78,7 @@
           lightMode.querySelector("span").style.fontWeight = "bold";
         } else if (localStorage.theme === 'dark') {
           darkMode.querySelector("span").style.fontWeight = "bold";
-        } else if (localStorage.theme === 'system') {
+        } else if (localStorage.theme === 'system' || !('theme' in localStorage)) {
           systemMode.querySelector("span").style.fontWeight = "bold";
         }
       }
