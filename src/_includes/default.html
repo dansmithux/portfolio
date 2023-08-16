@@ -53,7 +53,7 @@
       
       function themeCheck() {
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) || localStorage.theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
           document.documentElement.classList.add('dark');
         } else {
           document.documentElement.classList.remove('dark');
@@ -62,15 +62,36 @@
 
       themeCheck();
 
+
       let lightMode = document.getElementById("light-mode-toggle");
       let darkMode = document.getElementById("dark-mode-toggle");
       let systemMode = document.getElementById("system-mode-toggle");
 
+      function indicatorReset() {
+        document.querySelectorAll(".toggle-switch").forEach(function (item) {
+          item.querySelector("span").style.fontWeight = "normal";
+        });
+      }
+
+      function indicatorLoad() {
+        if (localStorage.theme === 'light') {
+          lightMode.querySelector("span").style.fontWeight = "bold";
+        } else if (localStorage.theme === 'dark') {
+          darkMode.querySelector("span").style.fontWeight = "bold";
+        } else if (localStorage.theme === 'system') {
+          systemMode.querySelector("span").style.fontWeight = "bold";
+        }
+      }
+
+      indicatorLoad();
+
       lightMode.addEventListener("click", function(e) {
         e.preventDefault();
-        // Eser explicitly chooses light mode
+        // User explicitly chooses light mode
         localStorage.theme = 'light';
         document.documentElement.classList.remove('dark');
+        indicatorReset();
+        this.querySelector("span").style.fontWeight = "bold";
       });
 
       darkMode.addEventListener("click", function(e) {
@@ -78,13 +99,18 @@
         // User explicitly chooses dark mode
         localStorage.theme = 'dark';
         document.documentElement.classList.add('dark');
+        indicatorReset();
+        this.querySelector("span").style.fontWeight = "bold";
       });
 
       systemMode.addEventListener("click", function(e) {
         e.preventDefault();
         // User explicitly chooses to respect the OS preference
-        localStorage.removeItem('theme');
+        localStorage.theme = 'system';
         themeCheck();
+        indicatorReset();
+        this.querySelector("span").style.fontWeight = "bold";
+
       });
     </script>
 

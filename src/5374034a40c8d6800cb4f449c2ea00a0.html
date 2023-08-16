@@ -1,0 +1,110 @@
+---
+layout: default
+title: Fetch
+path: /5374034a40c8d6800cb4f449c2ea00a0/
+eleventyExcludeFromCollections: true
+---
+
+<div class="container max-w-4xl mt-6  px-4">
+    <div class="">
+        <h1 class="font-bold text-5xl">{{title}}</h1>
+    </div>
+    <div class="my-8 mx-auto">
+        <div class="md:p-8 md:border md:border-gray-200 md:bg-white dark:md:bg-gray-900 dark:border-gray-800 dark:text-gray-200">
+            <form>
+                <label class="block text-sm font-bold mb-2" for="phoneNumber">
+                    Phone Number <span class="text-red-600">*</span>
+                </label>
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:outline-blue-600 focus:shadow-outline" id="phoneNumber" name="phoneNumber" type="text" placeholder="Phone Number" required>
+
+                <button id="fetch" class="mt-10 relative inline-flex items-center justify-center p-4 px-5 py-2 my-2 sm:mx-2 overflow-hidden font-medium no-underline text-indigo-600 transition duration-300 ease-out rounded-full group w-full sm:w-auto" type="submit">
+                    <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
+                    <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                    <span class="relative text-white ">
+                        <span class="">Search</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 mb-1 inline">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </span>
+                </button>
+            </form>
+
+            <div id="errorElem"></div>
+
+            <div>
+
+                <div><strong>Caller Name:</strong> <span id="callerName"></span></div>
+                <div><strong>Caller Type:</strong> <span id="callerType"></span></div>
+
+                <div><strong>Calling Country Code:</strong> <span id="callingCountryCode"></span></div>
+                <div><strong>Country Code:</strong> <span id="countryCode"></span></div>
+
+                <div><strong>Line Type Intelligence:</strong> <span id="lineTypeIntelligence"></span></div>
+                <div><strong>Carrier Name:</strong> <span id="carrierName"></span></div>
+                <div><strong>Type:</strong> <span id="type"></span></div>
+
+                <div><strong>National Format:</strong> <span id="nationalFormat"></span></div>
+                <div><strong>Phone Number:</strong> <span id="phoneNumber"></span></div>
+                <div><strong>Valid:</strong> <span id="valid"></span></div>
+                
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var regex = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
+
+    let fetchBtn = document.getElementById("fetch");
+    let errorElem = document.getElementById("errorElem");
+
+    let callerNameElem = document.getElementById("callerName");
+    let callerTypeElem = document.getElementById("callerType");
+    let callingCountryCodeElem = document.getElementById("callingCountryCode");
+    let countryCodeElem = document.getElementById("countryCode");
+    let lineTypeIntelligenceElem = document.getElementById("lineTypeIntelligence");
+    let carrierNameElem = document.getElementById("carrierName");
+    let typeElem = document.getElementById("type");
+    let nationalFormatElem = document.getElementById("nationalFormat");
+    let phoneNumberElem = document.getElementById("phoneNumber");
+    let validElem = document.getElementById("valid");
+
+    fetchBtn.addEventListener('click', async (event) => {
+        event.preventDefault();
+        
+        let phoneNumber = document.getElementById("phoneNumber");
+        let phoneNumberVal = parseInt(phoneNumber.value);
+
+        if (regex.test(phoneNumberVal) == true) {
+            const response = await fetch('/.netlify/functions/fetch?phoneNumber=' + phoneNumber.value).then(response => response.json())
+                // responseText.innerText = JSON.stringify(response.result);
+
+                errorElem.innerText = "";
+                callerNameElem.innerText = "";
+                callerTypeElem.innerText = "";
+                callingCountryCodeElem.innerText = "";
+                countryCodeElem.innerText = "";
+                lineTypeIntelligenceElem.innerText = "";
+                carrierNameElem.innerText = "";
+                typeElem.innerText = "";
+                nationalFormatElem.innerText = "";
+                phoneNumberElem.innerText = "";
+                validElem.innerText = "";
+
+                callerName.innerText = JSON.stringify(response.result.caller_name.caller_name);
+                callerType.innerText = JSON.stringify(response.result.caller_name.caller_type);
+                callingCountryCode.innerText = JSON.stringify(response.result.calling_country_code);
+                countryCode.innerText = JSON.stringify(response.result.country_code);
+                lineTypeIntelligence.innerText = JSON.stringify(response.result.line_type_intelligence);
+                carrierName.innerText = JSON.stringify(response.result.line_type_intelligence.carrier_name);
+                type.innerText = JSON.stringify(response.result.line_type_intelligence.type);
+                nationalFormat.innerText = JSON.stringify(response.result.national_format);
+                phoneNumber.innerText = JSON.stringify(response.result.phone_number);
+                valid.innerText = JSON.stringify(response.result.valid);
+        } else {
+            errorElem.innerText = "Please enter a valid phone number";
+        }
+    });
+</script>
