@@ -4,13 +4,9 @@ const fetch = require('node-fetch')
 // Find your Account SID and Auth Token at twilio.com/console
 // and set the environment variables. See http://twil.io/secure
 
-const accountSid = "ACfd9e581a1ab832e39228597ced3ae56a";
-// const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
 
-const authToken = "3b7314ac91df20dee1fa03f80dcd6016";
-// const authToken = process.env.TWILIO_AUTH_TOKEN;
-
-// const client = require('twilio')(accountSid, authToken);
+const authToken = process.env.TWILIO_AUTH_TOKEN;
 
 const handler = async function (event, context, callback) {
 
