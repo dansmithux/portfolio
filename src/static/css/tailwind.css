@@ -7,11 +7,15 @@
 body {
   font-family: 'Libre Franklin', sans-serif;
   @apply text-gray-800 dark:text-white;
-/*  background-image: url("/static/img/green.jpg");*/
-/*  background-size: cover;*/
-/*  background-attachment: fixed;*/
+  background-image: url("/static/img/diagonal-3.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
+html.dark body {
+  background-image: url("/static/img/dark-green.png");
+}
 
 #light-mode-icon {
   display: block;
@@ -50,6 +54,20 @@ h2 {
 
 h3 {
   @apply text-2xl font-semibold;
+}
+
+.blur-bg {
+  backdrop-filter: blur(75px);
+  background-color: rgba(255,255,255,0.85);
+  transition: all .15s ease-in;
+}
+a.blur-bg:hover {
+  background-color: rgba(255,255,255,0.95);
+/*  transform: translateY(-4px);*/
+}
+
+html.dark .blur-bg {
+
 }
 
 .resume h2 {
