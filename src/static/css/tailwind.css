@@ -7,15 +7,17 @@
 body {
   font-family: 'Libre Franklin', sans-serif;
   @apply text-gray-800 dark:text-white;
+
   background-image: url("/static/img/diagonal-3.jpg");
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
-}
 
+}
 html.dark body {
   background-image: url("/static/img/dark-green.png");
 }
+
 
 #light-mode-icon {
   display: block;
@@ -66,7 +68,7 @@ a.blur-bg:hover {
 /*  transform: translateY(-4px);*/
 }
 
-html.dark .blur-bg {
+html.dark .blur-bg:hover {
 
 }
 
