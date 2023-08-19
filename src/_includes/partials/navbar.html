@@ -1,8 +1,8 @@
-<div class="{{ 'lg:fixed' if path == 'home' }} w-full">
+<div class="{{ 'lg:fixed' if path == 'home' }} w-full lg:px-6">
     <nav class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false"  @click.away="isOpen = false">
         <!--Logo etc-->
         <div class="{{ 'hidden' if path == 'home' }} flex items-center">
-            <a href="/"><span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-700 font-bold text-lg mr-1">Dan Smith</span> UX Designer</a>
+            <a href="/" class="text-gray-800 dark:text-gray-100"><span class="font-bold text-lg mr-1">Dan Smith</span> UX Designer</a>
         </div>
 
         <!--Toggle button (hidden on large screens)-->
@@ -21,7 +21,7 @@
                 <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
                     {% for item in navigation.items %}
                         <li class="nav__item mr-3" {% if item.url in page.url %} aria-current="page" {% endif %}>
-                            <a @click="isOpen = false" class="text-ml inline-block text-gray-500 dark:text-gray-300 no-underline hover:text-blue-600 py-2 px-4" href="{{ item.url }}">{{ item.text }}</a>
+                            <a @click="isOpen = false" class="text-ml inline-block text-gray-800 dark:text-gray-200 no-underline py-2 px-4" href="{{ item.url }}">{{ item.text }}</a>
                         </li>
                     {% endfor %}
                 </ul>
@@ -58,23 +58,19 @@
                         :aria-expanded="open"
                         :aria-controls="$id('dropdown-button')"
                         type="button"
-                        class="relative inline-flex items-center justify-center p-1 sm:mx-2 overflow-hidden font-medium no-underline text-indigo-600 transition duration-300 ease-out rounded-full group w-full sm:w-auto"
+                        class="lg:ml-2 lg:mt-1"
                         >
-                        <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
-                        <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                        <span class="relative text-white">
 
-                            <!-- Light -->
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" id="light-mode-icon">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-                            </svg> 
+                        <!-- Light -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" id="light-mode-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                        </svg> 
 
-                            <!-- Dark -->
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" id="dark-mode-icon">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-                            </svg> 
+                        <!-- Dark -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" id="dark-mode-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                        </svg> 
 
-                        </span>
                     </button>
 
                     <!-- Panel -->

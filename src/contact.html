@@ -5,13 +5,13 @@ path: /contact/
 eleventyExcludeFromCollections: true
 ---
 
-<div class="container max-w-4xl mt-6  px-4">
+<div class="container max-w-4xl mt-6  px-4 animate__animated animate__fadeIn animate__fastest">
     <div class="">
         <h1 class="font-bold text-5xl">{{title}}</h1>
     </div>
-    <div class="my-8 mx-auto">
+    <div class="my-8 mx-auto content-card">
 
-        <form name="contact" method="POST" action="/thank-you" data-netlify="true" data-netlify-recaptcha="true" class="p-8 md:p-12 md:border md:border-gray-200 dark:md:bg-gray-900 dark:border-gray-800 dark:text-gray-200 blur-bg rounded-xl">
+        <form name="contact" method="POST" action="/thank-you" data-netlify="true" data-netlify-recaptcha="true" class="">
             <p class="hidden">
                 <label>
                     Don't fill this out if you're human: <input name="bot-field" />
@@ -37,16 +37,12 @@ eleventyExcludeFromCollections: true
             </div>
             <div data-netlify-recaptcha="true" class="mb-4"></div>
 
-            <button class="relative inline-flex items-center justify-center p-4 px-5 py-2 overflow-hidden font-medium no-underline text-indigo-600 transition duration-300 ease-out rounded-full group w-full sm:w-auto" type="submit">
-                <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
-                <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                <span class="relative text-white ">
-                    <span class="">Send Message</span>
+            <button class="btn-outline" type="submit">
+                <span class="">Send Message</span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 mb-1 inline">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-                    </svg>
-                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 mb-1 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                </svg>
             </button>
         </form>
 
