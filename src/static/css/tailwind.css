@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/*Your Custom CSS Goes here*/
-
 body {
   font-family: 'Libre Franklin', sans-serif;
   @apply text-gray-800 dark:text-white;
 
-  background-image: url("/static/img/diagonal-3.jpg");
-  background-position: top;
-  background-size: cover;
+  background: linear-gradient(-45deg, #276174, #33C58E, #63FD88);
   background-attachment: fixed;
-
 }
+
 html.dark body {
-  background-image: url("/static/img/dark-green.png");
+
+/*  background: radial-gradient( circle farthest-corner at 10% 20%, #060a1a, #053553, #1a5468, #139291);*/
+
+  background: linear-gradient(-45deg, #139291, #1a5468, #053553, #060a1a);
+  background-attachment: fixed;
 }
 
 
@@ -44,8 +44,6 @@ html.dark body {
   text-align: left;
 }
 
-
-
 h1 {
   @apply text-5xl tracking-tighter mb-3 text-center lg:text-6xl;
 }
@@ -58,18 +56,32 @@ h3 {
   @apply text-2xl font-semibold;
 }
 
-
 .content-card {
-  @apply bg-gray-50 dark:bg-gray-950 dark:bg-gray-950 dark:text-gray-200 dark:border-gray-800 p-8 md:p-12 rounded shadow;
+  @apply border border-gray-300 hover:border-white dark:text-gray-200 dark:border-gray-800 p-8 md:p-12 rounded;
+  background-color: rgba(249, 250, 251, .8);
+  box-shadow: 0 0 20px #33C58E;
+}
+html.dark .content-card {
+/*  background-color: rgba(31, 41, 55, .95);*/
+  @apply bg-gray-950;
+  box-shadow: 0 0 20px rgba(7,40,64,.8);
+
 }
 
 .link-card {
-  @apply bg-gray-50 hover:bg-white p-5 border rounded-xl border-gray-300 hover:border-white shadow-lg text-gray-900 hover:shadow-xl dark:bg-gray-950 dark:border-gray-800 dark:text-gray-200 dark:hover:bg-gray-900;
+  @apply hover:bg-white p-5 border rounded-xl border-gray-300 hover:border-white shadow-lg text-gray-900 hover:shadow-xl dark:border-gray-800 dark:text-gray-200 dark:hover:bg-gray-900;
+
+  background-color: rgba(249, 250, 251, .85);
   transition: all .1s ease-in-out;
+}
+
+html.dark .link-card {
+  background-color: rgba(17, 24, 39, .85);
 }
 
 .link-card:hover {
   transform: scale(1.015);
+  @apply px-5;
   transition: all .1s ease-in-out;
 }
 
@@ -94,19 +106,6 @@ h3 {
   @apply inline-block rounded-full border border-gray-500 px-4 py-2 hover:bg-gray-800 hover:text-gray-100 hover:border-gray-800 dark:text-gray-200 dark:border-gray-100 dark:hover:border-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-800;
   font-weight: 500;
 }
-
-
-
-/*.blur-bg {
-  transition: all .15s ease-in;
-}
-
-a.blur-bg:hover {
-  box-shadow: 5px 5px 25px rgba(0,0,0,.3);
-  
-  transition: all .15s ease-in;
-}*/
-
 
 .resume h2 {
   @apply text-4xl font-bold;
@@ -146,14 +145,6 @@ a.blur-bg:hover {
   font-family: 'Fuzzy Bubbles', cursive;
 }
 
-/* Syntax Highlighting*/
-
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  @apply bg-gray-800;
-}
-
-
 @layer base {
 
   h1 {
@@ -181,4 +172,3 @@ body pre[class*="language-"] {
   }
 
 }
-
