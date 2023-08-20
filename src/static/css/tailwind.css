@@ -5,15 +5,12 @@
 body {
   font-family: 'Libre Franklin', sans-serif;
   @apply text-gray-800 dark:text-white;
-
   background: linear-gradient(-45deg, #276174, #33C58E, #63FD88);
   background-attachment: fixed;
 }
 
 html.dark body {
-
 /*  background: radial-gradient( circle farthest-corner at 10% 20%, #060a1a, #053553, #1a5468, #139291);*/
-
   background: linear-gradient(-45deg, #139291, #1a5468, #053553, #060a1a);
   background-attachment: fixed;
 }
@@ -57,19 +54,19 @@ h3 {
 }
 
 .content-card {
-  @apply border border-gray-300 hover:border-white dark:text-gray-200 dark:border-gray-800 p-8 md:p-12 rounded;
-  background-color: rgba(249, 250, 251, .8);
+  @apply border border-gray-300 dark:text-gray-200 dark:border-gray-800 p-8 md:p-12 rounded-lg;
+  background-color: rgba(249, 250, 251, .85);
   box-shadow: 0 0 20px #33C58E;
 }
 html.dark .content-card {
-/*  background-color: rgba(31, 41, 55, .95);*/
-  @apply bg-gray-950;
+  background-color: rgba(17, 24, 39, .85);
+/*  @apply bg-gray-900;*/
   box-shadow: 0 0 20px rgba(7,40,64,.8);
 
 }
 
 .link-card {
-  @apply hover:bg-white p-5 border rounded-xl border-gray-300 hover:border-white shadow-lg text-gray-900 hover:shadow-xl dark:border-gray-800 dark:text-gray-200 dark:hover:bg-gray-900;
+  @apply hover:bg-white p-5 border rounded-xl border-gray-300  shadow-lg text-gray-900 hover:shadow-xl dark:border-gray-800 dark:text-gray-200 dark:hover:bg-gray-800;
 
   background-color: rgba(249, 250, 251, .85);
   transition: all .1s ease-in-out;
@@ -86,13 +83,13 @@ html.dark .link-card {
 }
 
 .tag {
-  @apply inline-flex items-center bg-blue-50 px-2 py-1 text-xs font-medium text-gray-700 ring-1 ring-inset ring-gray-700/10 dark:bg-gray-800 dark:border-gray-800 dark:text-gray-200 dark:ring-gray-100/10;
+  @apply inline-flex items-center bg-sky-50 px-2 py-1 text-xs font-medium text-sky-700 ring-1 ring-inset ring-sky-700/10 dark:bg-sky-800 dark:border-sky-800 dark:text-sky-200 dark:ring-sky-100/10;
 }
 
 .btn {
   @apply inline-block rounded-full w-full sm:w-auto no-underline font-semibold px-5 py-2 bg-gray-50 hover:bg-white text-gray-900 dark:hover:bg-gray-100 border border-gray-200 hover:border-white
 
-  dark:bg-gray-950 dark:border-gray-800 dark:text-gray-200 dark:hover:bg-gray-900
+  dark:bg-gray-900 dark:border-gray-800 dark:text-gray-200 dark:hover:bg-gray-800
  shadow-md hover:shadow-lg;
   transition: all .1s ease-in-out;
 }
