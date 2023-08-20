@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { background-attachment: fixed; }
-
 body {
   font-family: 'Libre Franklin', sans-serif;
   @apply text-gray-800 dark:text-white;
