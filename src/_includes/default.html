@@ -29,28 +29,8 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-VVR97X6L2R');
-    </script>
 
-  </head>
-  <body class="">
-    {% include "./partials/navbar.html" %}
-
-    {{ content | safe }}
-
-    {% include "./partials/footer.html" %}
-
-    <script src="/static/js/alpine.js"></script>
-
-    {% if path == "home" %}
-      <!-- Netlify Identity Widget -->
-      <!-- Needed only if you are using Netlify Identity feature -->
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    {% endif %}
-
-    <script>
-      
       function themeCheck() {
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) || localStorage.theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -59,10 +39,17 @@
           document.documentElement.classList.remove('dark');
         }
       };
-
       themeCheck();
+    </script>
+  </head>
+  <body class="">
+    {% include "./partials/navbar.html" %}
 
+    {{ content | safe }}
 
+    {% include "./partials/footer.html" %}
+
+    <script>
       let lightMode = document.getElementById("light-mode-toggle");
       let darkMode = document.getElementById("dark-mode-toggle");
       let systemMode = document.getElementById("system-mode-toggle");
@@ -113,6 +100,14 @@
 
       });
     </script>
+    <script src="/static/js/alpine.js"></script>
+
+    {% if path == "home" %}
+      <!-- Netlify Identity Widget -->
+      <!-- Needed only if you are using Netlify Identity feature -->
+      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
+
 
     <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
 
