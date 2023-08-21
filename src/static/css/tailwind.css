@@ -80,7 +80,7 @@ html.dark .link-card {
 }
 
 .tag {
-  @apply inline-flex items-center bg-sky-50 px-2 py-1 text-xs font-medium text-sky-700 ring-1 ring-inset ring-sky-700/10 dark:bg-sky-800 dark:border-sky-800 dark:text-sky-200 dark:ring-sky-100/10;
+  @apply inline-flex items-center bg-sky-50 px-2 py-1 mb-1 text-xs font-medium text-sky-700 ring-1 ring-inset ring-sky-700/10 dark:bg-sky-800 dark:border-sky-800 dark:text-sky-200 dark:ring-sky-100/10;
 }
 
 .btn {

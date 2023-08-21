@@ -3,22 +3,31 @@ layout: default
 prism: true
 ---
 
-<div class="container max-w-4xl mt-6  px-4 animate__animated animate__fadeIn animate__fastest">
+<div class="container max-w-5xl mt-6 px-6 animate__animated animate__fadeIn animate__fastest">
+
     <div class="pb-5 mb-5">
-        <h1 class="font-bold text-5xl">{{title}}</h1>
 
-        <p class="text-center">
-            {% if tags %}
-                {% for tag in tags %}
-                    {% if tag != 'portfolio' %}
-                        <span class="tag">{{ tag }}</span>
-                    {% endif %}
-                {% endfor %}
+        <div class="px-4">
+            <h1 class="font-bold text-5xl">{{title}}</h1>
+
+            <p class="text-center max-w-sm mx-auto">
+                {% if tags %}
+                    {% for tag in tags %}
+                        {% if tag != 'portfolio' %}
+                            <span class="tag">{{ tag }}</span>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </p>
+
+            {% if screenshot %}
+                <img src="/static/img/{{screenshot}}.png" class="w-full max-w-xl mx-auto mt-6">
             {% endif %}
-        </p>
-
+        </div>
     </div>
-    <article class="prose my-4 mx-auto">
-        {{ content | safe }}</article>
+
+    <article class="prose my-4">
+        {{ content | safe }}
+    </article>
 
 </div>
